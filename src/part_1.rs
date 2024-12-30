@@ -1,4 +1,5 @@
 use std::fs;
+
 pub fn solve() {
     let contents = fs::read_to_string("./data/part-1.txt")
         .expect("Should have been able to read the file");
@@ -12,5 +13,5 @@ pub fn solve() {
         }
     }
 
-    println!("potions: {potions}");
+    println!("part_1: {potions}");
 }
