@@ -3,6 +3,7 @@ package utils
 
 import (
 	"os"
+	"strings"
 )
 
 // ReadFile reads the content of a file and returns it as a string.
@@ -14,5 +15,5 @@ func ReadFile(filePath string) (string, error) {
 	}
 
 	// convert bytes to string
-	return string(data), nil
+	return strings.TrimSuffix(string(data), "\n"), nil
 }
